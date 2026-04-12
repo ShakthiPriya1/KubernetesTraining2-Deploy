@@ -19,6 +19,9 @@ spec:
         image: shakthipriya/fastapi-app:231c8d4e
         ports:
           - containerPort: 8000
+        env:
+          - name: ENV
+            value: "prod"
         resources:
           requests:
             cpu: "100m"
